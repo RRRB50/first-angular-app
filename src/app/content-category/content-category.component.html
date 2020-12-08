@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="card" [ngClass]="cardCategory()">
+    <img [src]="Games.imgLink">
+    <h2>{{ Games.name }}</h2>
+    <div class="title title--epic">{{ Games.category }}</div>
+    <div class="desc">{{ Games.description }}</div>
+
+    <button (click)="goToLink( Games.steamLink )" class="title title--epic">Buy now!</button>
+  </div>
+</div>
